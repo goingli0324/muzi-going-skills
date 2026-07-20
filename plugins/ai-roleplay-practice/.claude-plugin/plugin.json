@@ -1,0 +1,9 @@
+{
+  "name": "ai-roleplay-practice",
+  "description": "AI 角色扮演練習夥伴 — rehearse difficult conversations with AI playing any persona you define, with structured feedback at the end.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muzi Going Li",
+    "email": "goingli0324@gmail.com"
+  }
+}

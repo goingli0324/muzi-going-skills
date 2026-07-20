@@ -18,6 +18,26 @@
       "homepage": "https://github.com/goingli0324/prompt-coach"
     },
     {
+      "name": "multi-perspective-panel",
+      "description": "多角度組隊思考 — reviews any decision, plan, or open question from four independent thinking angles (critical/creative/communication/interaction), as a parallel panel or an adversarial red/blue team debate.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "productivity",
+      "source": "./plugins/multi-perspective-panel",
+      "homepage": "https://github.com/goingli0324/multi-perspective-panel"
+    },
+    {
+      "name": "ai-roleplay-practice",
+      "description": "AI 角色扮演練習夥伴 — sets up an interactive roleplay to rehearse difficult conversations with AI playing any persona you define, with structured feedback at the end.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "learning",
+      "source": "./plugins/ai-roleplay-practice",
+      "homepage": "https://github.com/goingli0324/ai-roleplay-practice"
+    },
+    {
       "name": "web-security-reviewer",
       "description": "防禦性安全審查 — defensive security review of your own code (Apps Script, frontend, backend): vulnerabilities, data leakage, stress/performance risks, with a severity-ranked report plus corrected code.",
       "author": {
