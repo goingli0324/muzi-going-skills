@@ -1,0 +1,9 @@
+{
+  "name": "prompt-coach",
+  "description": "問對問題教練 — turns a vague request into a Goal / Constraints / Obstacle breakdown, then produces a ready-to-use structured prompt.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muzi Going Li",
+    "email": "goingli0324@gmail.com"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "muzi-going-skills",
+  "description": "Muzi Going 的 Claude skills 商店 — curated skills by Muzi Going Li",
+  "owner": {
+    "name": "Muzi Going Li",
+    "email": "goingli0324@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "prompt-coach",
+      "description": "問對問題教練 — turns a vague, underspecified request into a Goal / Constraints / Obstacle breakdown, then produces a ready-to-use structured prompt.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "productivity",
+      "source": "./plugins/prompt-coach",
+      "homepage": "https://github.com/goingli0324/prompt-coach"
+    },
+    {
+      "name": "web-security-reviewer",
+      "description": "防禦性安全審查 — defensive security review of your own code (Apps Script, frontend, backend): vulnerabilities, data leakage, stress/performance risks, with a severity-ranked report plus corrected code.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "security",
+      "source": "./plugins/web-security-reviewer",
+      "homepage": "https://github.com/goingli0324/web-security-reviewer"
+    }
+  ]
+}
