@@ -1,0 +1,9 @@
+{
+  "name": "project-guardrails",
+  "description": "連動禁區防護 — analyze a codebase for 'change A, break B' high-risk zones and write guardrails into the project's CLAUDE.md.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muzi Going Li",
+    "email": "goingli0324@gmail.com"
+  }
+}

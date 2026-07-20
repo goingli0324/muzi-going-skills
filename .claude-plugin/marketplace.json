@@ -38,6 +38,36 @@
       "homepage": "https://github.com/goingli0324/ai-roleplay-practice"
     },
     {
+      "name": "agentic-dev-loop",
+      "description": "系統化開發工作流 — research → plan.md → implement → dual verify gates (security + UI/UX) → deploy. Orchestrates project-guardrails, web-security-reviewer, and ui-ux-deploy-reviewer into one repeatable, resumable, auditable loop.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "development",
+      "source": "./plugins/agentic-dev-loop",
+      "homepage": "https://github.com/goingli0324/agentic-dev-loop"
+    },
+    {
+      "name": "project-guardrails",
+      "description": "連動禁區防護 — analyzes a codebase for 'change A, break B' high-risk zones (high fan-in modules, data contracts, deploy configs, external contracts, algorithmic cores) and writes guardrails into the project's CLAUDE.md.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "development",
+      "source": "./plugins/project-guardrails",
+      "homepage": "https://github.com/goingli0324/project-guardrails"
+    },
+    {
+      "name": "ui-ux-deploy-reviewer",
+      "description": "部署前 UI/UX 總體檢 — pre-deploy UI/UX review against 20 principles (Nielsen's 10 heuristics + interaction-psychology laws + accessibility), outputting severity-ranked issues, fixes, and a go/no-go checklist.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "design",
+      "source": "./plugins/ui-ux-deploy-reviewer",
+      "homepage": "https://github.com/goingli0324/ui-ux-deploy-reviewer"
+    },
+    {
       "name": "web-security-reviewer",
       "description": "防禦性安全審查 — defensive security review of your own code (Apps Script, frontend, backend): vulnerabilities, data leakage, stress/performance risks, with a severity-ranked report plus corrected code.",
       "author": {

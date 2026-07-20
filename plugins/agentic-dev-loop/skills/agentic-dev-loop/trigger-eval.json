@@ -1,0 +1,23 @@
+[
+  {"query": "my-learning-pwa 我想加一個錯題自動複習的功能，從規劃、寫 code 到部署 firebase 整個幫我走一遍", "should_trigger": true},
+  {"query": "幫我規劃一下這個新功能要怎麼做，我想要有計畫地開發、不要又改到一半亂掉", "should_trigger": true},
+  {"query": "org-registration-system 要加一個報名名單匯出 excel 的功能，從頭做到上線", "should_trigger": true},
+  {"query": "我有個想法想做成工具：一個給老師用的 TBCL 分級小測驗產生器，幫我從頭排開發步驟", "should_trigger": true},
+  {"query": "營隊系統那個 OTP 同意書要改邏輯，先研究再做，最後整理成 plan.md", "should_trigger": true},
+  {"query": "想在 my-learning-pwa 加離線快取，但我怕改壞別的東西，幫我有系統地從規劃做到部署", "should_trigger": true},
+  {"query": "ok 我要開一個新功能 想清楚再動手 不要又 vibe coding 亂寫一通", "should_trigger": true},
+  {"query": "幫我把這個 GAS 的 LINE chatbot 從需求整理成計畫、實作、到上線都走完", "should_trigger": true},
+  {"query": "這個 timeout 的 bug 我想有計畫地修，不要直接亂改，先弄清楚牽連到哪些檔再動", "should_trigger": true},
+  {"query": "我要從零做一個 Firebase PWA 給學生背單字，幫我把整個開發到部署的流程排出來", "should_trigger": true},
+  {"query": "部署前幫我檢查一下，這版要上線了", "should_trigger": true},
+  {"query": "上線前幫我跑一次 UI/UX 檢查，看 my-learning-pwa 在手機上好不好按", "should_trigger": false},
+  {"query": "用那 20 項原則檢視一下這個首頁的易用性，給我問題清單", "should_trigger": false},
+  {"query": "這段 GAS 後端 code 是我用 AI 生成的，幫我看有沒有漏洞、會不會把學員個資洩出去", "should_trigger": false},
+  {"query": "幫我看這段 fetch 的 code 會不會被攻擊，順便 harden 一下", "should_trigger": false},
+  {"query": "幫 my-learning-pwa 分析哪些程式碼不能亂動，把連動禁區寫進 CLAUDE.md", "should_trigger": false},
+  {"query": "這個專案哪些模組牽一髮動全身？我想先搞清楚哪些不能碰", "should_trigger": false},
+  {"query": "幫我寫一段博論文獻探討，關於 AI 在臺灣華語自學市場的應用，要 APA 7", "should_trigger": false},
+  {"query": "Firebase Hosting 免費方案的每月流量額度到底是多少？", "should_trigger": false},
+  {"query": "clasp push 一直失敗、說 script id 找不到，這要怎麼解？", "should_trigger": false},
+  {"query": "幫我評審這位學員的 AI 教學作品，產出天堂地獄版評分表", "should_trigger": false}
+]
