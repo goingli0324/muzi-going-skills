@@ -38,6 +38,16 @@
       "homepage": "https://github.com/goingli0324/ai-roleplay-practice"
     },
     {
+      "name": "pdca-process-review",
+      "description": "PDCA 流程檢視 — apply the Deming cycle (Plan-Do-Check-Act) to systematically review and improve any recurring process or way of working, with evidence-based Check and standardize-or-adjust Act.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "productivity",
+      "source": "./plugins/pdca-process-review",
+      "homepage": "https://github.com/goingli0324/pdca-process-review"
+    },
+    {
       "name": "agentic-dev-loop",
       "description": "系統化開發工作流 — research → plan.md → implement → dual verify gates (security + UI/UX) → deploy. Orchestrates project-guardrails, web-security-reviewer, and ui-ux-deploy-reviewer into one repeatable, resumable, auditable loop.",
       "author": {
