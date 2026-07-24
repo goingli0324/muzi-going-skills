@@ -38,6 +38,16 @@
       "homepage": "https://github.com/goingli0324/ai-roleplay-practice"
     },
     {
+      "name": "futures-studies-analyst",
+      "description": "未來學研究方法分析器 — turns qualitative and trend data into rigorous futures-studies analysis organized by Inayatullah's Six Pillars: Delphi, CLA, scenario planning, environmental scanning, futures triangle/wheel, backcasting, Three Horizons, cross-impact analysis.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "productivity",
+      "source": "./plugins/futures-studies-analyst",
+      "homepage": "https://github.com/goingli0324/futures-studies-analyst"
+    },
+    {
       "name": "pdca-process-review",
       "description": "PDCA 流程檢視 — apply the Deming cycle (Plan-Do-Check-Act) to systematically review and improve any recurring process or way of working, with evidence-based Check and standardize-or-adjust Act.",
       "author": {
