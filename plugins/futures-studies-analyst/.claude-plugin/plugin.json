@@ -1,0 +1,9 @@
+{
+  "name": "futures-studies-analyst",
+  "description": "未來學研究方法分析器 — turn qualitative and trend data into rigorous futures-studies analysis: Six Pillars, Delphi, CLA, scenario planning, futures triangle/wheel, backcasting, Three Horizons and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muzi Going Li",
+    "email": "goingli0324@gmail.com"
+  }
+}
