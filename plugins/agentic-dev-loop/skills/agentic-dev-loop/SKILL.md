@@ -110,16 +110,7 @@ description: 從研究、plan.md、實作、Verify 雙閘到部署的開發迴�
 部署前要同時滿足:(a) Verify 兩道閘該走的都走了、且無未解 P0/Critical/High;(b) **smoke 閘**——有 `test:smoke` 的專案跑過(可用 `/predeploy` 自動偵測串接),Build 出口那份 smoke 清單已**人工逐項驗過**(照全域 §三,未驗證視同未過);(c) 通過 `references/deploy-safety.md` 的操作核對。最關鍵一條:**部署前明確核對目標帳號與專案**——若你有多個 Firebase CLI 帳號與專案，誤部署是真實會發生的風險。部署設定（`.firebaserc`、`--account`/`-P` 旗標、`appsscript.json` 權限）通常已被 project-guardrails 列為 CLAUDE.md 連動禁區。本 skill **不替使用者執行部署、不寫入真實金鑰、不改分享權限**;這些列成待辦由使用者親自操作。
 
 ### （選用附註）把成果轉成學術產出
-這不是本迴圈的核心關卡，但記在這裡:當某次開發成果要變成研討會摘要、論文章節或期刊段落時，把它當成**離開本迴圈、進入學術書寫流程**的轉場即可，本 skill 不代寫、不繞過 AI 偵測;學術文字的作者責任始終在使用者身上。
-
-## 跟 Matt 原版的關鍵差異（為什麼要改）
-
-- **不預設全程 bypass。** 改成風險分級;🔴 一律關閉。
-- **不建議多機常駐 / 遠端觸發 / 雙付費方案。** 單人、成本敏感、且每多一個常開執行點就多一個個資攻擊面;現階段收益不抵風險與開銷。
-- **平行 session 收斂到 2–3 個，且工作/個人帳號分視窗**，降低誤部署。
-- **保留使用者讀計畫**;TLDR 只當輔助。
-- **新增兩個機構級關卡**:部署前帳號核對、🔴 強制安全驗證——這是 Matt 沒有、但維護機構資料的人必須有的合規層。
-- **新增前置連動禁區分析**:進專案先確認 CLAUDE.md 有 project-guardrails 標記的禁區，規劃時據以避開「改 A 壞 B」——Matt 靠個人記憶與 GitHub 回滾，本 skill 改成把風險寫進檔案、規劃時主動讀。
+開發成果要變成研討會摘要、論文章節或期刊段落時，交棒給學術書寫 skill——那是離開本迴圈、進入學術書寫流程的轉場，本 skill 不代寫。
 
 ## 一定要對使用者講清楚的限制
 
@@ -132,4 +123,5 @@ description: 從研究、plan.md、實作、Verify 雙閘到部署的開發迴�
 
 - `references/plan-template.md` — `plan.md` 的結構化模板與驗收標準寫法（含 Firebase / GAS / Cloud Run 三種變體）。要產出計畫時讀這份。
 - `references/deploy-safety.md` — 多帳號/多專案部署前檢查清單（Firebase CLI、clasp、Cloud Run），以及帳號誤用的防呆做法。要部署時讀這份。
+- `references/design-rationale.md` — 本 skill 為什麼這樣收斂（與 Matt 原版的六項差異）。要改動流程本身時才讀。
 - `references/handoffs.md` — 與 project-guardrails（前置）、web-security-reviewer（Verify 安全閘）、ui-ux-deploy-reviewer（Verify UI/UX 閘）三個 skill 的交棒協定:何時交、交什麼、交完怎麼接回來，含 Verify 雙閘的適用判斷表。
