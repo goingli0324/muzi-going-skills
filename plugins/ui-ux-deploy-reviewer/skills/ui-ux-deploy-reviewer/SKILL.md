@@ -1,6 +1,6 @@
 ---
 name: ui-ux-deploy-reviewer
-description: 部署前的 UI/UX 總體檢。以全球公認的 20 項 UI/UX 原則(Nielsen 十大易用性啟發法 + 互動心理學定律 + 可及性與適應性)逐項審視網站或 Web App 的前端程式碼與使用者體驗,輸出「依嚴重度排序的問題清單 + 修正建議 + 部署放行檢核表」。MANDATORY TRIGGERS:使用者說「部署前 UI/UX 檢查」「deploy 前跑一次 UI/UX」「上線前幫我檢查 UI/UX」「審查 UI/UX」「用 20 原則檢視」「這個網站好不好用」「易用性審查」「heuristic evaluation」「檢查使用者體驗」,或在準備 firebase deploy / 上線 / 發布前要求做最後檢查時,都要套用此 skill。即使使用者沒明說「UI/UX」,只要意圖是部署前對介面與體驗做整體審視,就觸發。SCOPE:本 skill 審查 UI/UX 與呈現層程式碼品質;資訊安全審查請改用 web-security-reviewer。本 skill 同時是 agentic-dev-loop「Verify 雙閘」的 UI/UX 閘。分流原則：泛泛的「部署前／上線前檢查」（未指明只要 UI/UX）應交給 agentic-dev-loop 走雙閘，以免漏掉安全審查；本 skill 只在意圖明確聚焦 UI/UX／易用性／20 原則時觸發。
+description: 以 20 項 UI/UX 原則（Nielsen 啟發法＋互動心理學定律＋可及性）審視前端程式碼與使用者體驗，輸出依嚴重度排序的問題清單與部署放行檢核表。當使用者明確要審查 UI/UX、易用性、heuristic evaluation，或問「這個網站好不好用」時觸發；未指明範圍的「部署前檢查」交給 agentic-dev-loop 走雙閘。也是該迴圈的 UI/UX 閘。
 ---
 
 # UI/UX Deploy Reviewer(部署前 UI/UX 總體檢)

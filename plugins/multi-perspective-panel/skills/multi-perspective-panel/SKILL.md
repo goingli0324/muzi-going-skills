@@ -1,6 +1,6 @@
 ---
 name: multi-perspective-panel
-description: Reviews any decision, plan, proposal, or open question from four independent thinking angles — critical, creative, communication, and interaction — either as a parallel panel or as an adversarial red-team/blue-team debate. Use this whenever the user asks to "從多角度想", "組隊思考", "壓力測試這個決定", brings a decision or plan and wants it reviewed for blind spots, is stuck seeing a problem from only one angle, or is doing scenario/strategy analysis (including dissertation-level CLA or futures-scenario work) that would benefit from multiple independent lenses rather than a single take. Trigger proactively even without the user naming the skill — any single-angle answer to a real decision or plan is a missed opportunity to surface blind spots the user can't see from where they're standing.
+description: Reviews a decision, plan, or open question from four independent angles — critical, creative, communication, interaction — as a parallel panel or a red-team/blue-team debate. Use when the user asks 「從多角度想」「組隊思考」「壓力測試這個決定」, brings a plan they want checked for blind spots, or is doing scenario/strategy work (including CLA or futures scenarios) that needs more than one lens.
 ---
 
 # 多角度組隊思考 (Multi-Perspective Panel)

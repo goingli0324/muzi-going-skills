@@ -1,6 +1,6 @@
 ---
 name: ai-roleplay-practice
-description: Sets up an interactive AI roleplay so the user can rehearse a difficult conversation or scenario — any persona, any context — with structured feedback at the end. Use this whenever the user wants to practice, rehearse, or prepare for a conversation by having AI play a specific role (a difficult student, a skeptical parent, a colleague pushing back, a dissertation committee member, an interviewer, a negotiation counterpart, or any other identity the user names), says things like "讓AI扮演...", "陪我練習...", "模擬一下...情境", or wants a safe, repeatable space to rehearse before a real high-stakes interaction. The persona is never fixed to one category — always let the user define who AI plays, and offer example personas only as starting suggestions.
+description: Sets up an interactive AI roleplay so the user can rehearse a difficult conversation — any persona they name — with structured feedback at the end. Use when the user says 「讓AI扮演…」「陪我練習…」「模擬一下…情境」, or wants to rehearse before a high-stakes interaction (a skeptical parent, a dissertation committee, an interviewer, a negotiation counterpart).
 ---
 
 # AI 角色扮演練習夥伴 (AI Roleplay Practice)

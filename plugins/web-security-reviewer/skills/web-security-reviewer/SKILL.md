@@ -1,6 +1,6 @@
 ---
 name: web-security-reviewer
-description: 對使用者自己的程式碼做防禦性安全審查，檢測資安漏洞、資料外洩風險、壓力／效能風險與程式品質，並產出「依嚴重度排序的風險報告 ＋ 修正後程式碼」。涵蓋 Google Apps Script（Workspace 自動化）、前端 HTML/CSS/JS、後端 API（Node/Python/PHP 等）。特別適用於「使用者用 AI 生成 / vibe coding 寫出來、希望更安全、避免被攻擊或破壞」的網頁程式碼。MANDATORY TRIGGERS：使用者要求「檢測程式碼安全」「幫我看這段 code 有沒有漏洞」「防止資料外洩」「review 我的網頁／後端程式」「這段會不會被攻擊／被駭」「加固 / harden」「壓力測試」「優化程式碼安全性」「個資會不會外洩」「這是 AI 寫的幫我看安不安全」，或貼上一段前端／後端／Apps Script 程式碼並要求審查、找漏洞、修正建議、加固時，都要套用此 skill。即使使用者沒明說「資安」，只要意圖是審查或加固自己的程式碼，就觸發。SCOPE：本 skill 僅用於防禦性檢測——找出並修補使用者自己程式碼裡的漏洞；不協助撰寫可直接攻擊用的 exploit、不協助繞過資安機制。本 skill 同時是 agentic-dev-loop「Verify 雙閘」的安全閘：當該編排器要在部署前驗證安全／個資時會呼叫本 skill；使用者單獨要求安全審查時仍直接觸發本 skill。
+description: 對使用者自己的程式碼做防禦性安全審查，輸出依嚴重度排序的風險報告與修正後程式碼。當使用者要找漏洞、加固、擔心被攻擊或個資外洩，或貼上一段 AI 生成的程式碼要人幫忙看安不安全時觸發。也是 agentic-dev-loop Verify 雙閘的安全閘，供其他 skill 呼叫。
 ---
 
 # 網頁程式碼安全檢測（Web Security Reviewer）

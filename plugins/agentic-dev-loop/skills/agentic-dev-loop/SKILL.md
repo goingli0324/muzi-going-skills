@@ -1,6 +1,6 @@
 ---
 name: agentic-dev-loop
-description: 系統化開發工作流，把「先研究 → 寫 plan.md → 依計畫實作 → 部署前雙閘驗證 → 部署」固定成一條可重複的迴圈，專為單人維護多個 Firebase / Google Apps Script / GCP Cloud Run 專案的情境設計。核心是「計畫先行、狀態外部化到檔案、依專案風險分級決定授權與驗證強度」，作為編排器串接三個既有 skill：進入專案前若尚未建立連動禁區 → project-guardrails 分析並寫入 CLAUDE.md，規劃時據以避開「改 A 壞 B」；部署前 Verify 雙閘 → web-security-reviewer 做安全/個資/壓力驗證、ui-ux-deploy-reviewer 做 UI/UX 與呈現層審查（僅當有前端介面）。MANDATORY TRIGGERS：使用者說「開一個新功能」「幫我規劃這個開發」「從頭把這個功能做到上線」「先研究再做」「整理成 plan.md」「這個專案要怎麼做（指要從規劃做到上線，不是單純問方向）」「修這個 bug（要有計畫地修）」「<專案名> 要加東西」（以專案名開頭的開發需求）「要部署到 Firebase / Cloud Run」「GAS 寫一個…」「我有個想法想做成工具」「幫我排開發的步驟」「走完整個開發到部署的流程」，或貼上 issue 連結、錯誤截圖、需求描述並希望有系統地把它從規劃做到上線時，都要套用此 skill。注意分流：若使用者只要「單獨檢查 UI/UX」用 ui-ux-deploy-reviewer、只要「單獨做安全審查」用 web-security-reviewer、只要「分析專案禁區」用 project-guardrails；本 skill 是把這些串成完整迴圈的編排器，當意圖是「有規劃、可重現、會走到上線」的整段開發時才觸發。**重要安全防漏：若使用者說的是泛泛的「部署前檢查」「上線前幫我檢查」而沒指明只要 UI/UX 或只要安全，應由本 skill 接手走 Verify 雙閘（同時跑 web-security-reviewer 與 ui-ux-deploy-reviewer），絕不要只做其中一道——尤其不要只做 UI/UX 而漏掉安全閘，那會讓含學生個資的專案在沒過安全驗證下就上線。**SCOPE：本 skill 是工作流編排器，不取代使用者對計畫的閱讀與判斷；只在使用者自己的專案上運作，不協助繞過授權或資安機制。
+description: 從研究、plan.md、實作、Verify 雙閘到部署的開發迴圈編排器。當使用者要有計畫地把一個功能或 bug 從規劃走到上線（「開一個新功能」「先研究再做」「整理成 plan.md」「從頭做到上線」「幫我排開發步驟」「<專案名> 要加…」），或提出未指明範圍的「部署前／上線前檢查」時觸發——後者一律走雙閘，只跑 UI/UX 會漏掉安全與個資驗證。明確只要 UI/UX、只要安全審查、或只要分析連動禁區時，改用對應的單一 skill。
 ---
 
 # Agentic Dev Loop（系統化開發迴圈）

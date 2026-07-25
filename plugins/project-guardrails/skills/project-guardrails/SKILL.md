@@ -1,6 +1,6 @@
 ---
 name: project-guardrails
-description: 為專案建立「連動禁區」防護段落。自動分析專案程式碼,找出高扇入模組、資料結構契約、部署設定、對外契約與演算法核心等「改 A 會壞 B」的高風險區域,經使用者確認後寫入該專案的 CLAUDE.md,作為日後所有修改行為的防護依據。MANDATORY TRIGGERS:使用者說「建立連動禁區」「設定 guardrails」「init guardrails」「幫這個專案建立防護」「分析哪些程式碼不能亂動」「哪些模組牽一髮動全身」「建立修改防護段落」「把禁區寫進 CLAUDE.md」,或在新專案開始前要求建立修改安全機制時,都要套用此 skill。適用於 Firebase/PWA、GAS、後端服務等各類專案。SCOPE:本 skill 只做分析與(經確認後的)CLAUDE.md 寫入,不修改任何程式碼。本 skill 同時是 agentic-dev-loop 開發迴圈的「前置」階段：當該編排器在 Step 0 發現專案尚未建立連動禁區時會呼叫本 skill；使用者單獨要求分析禁區時仍直接觸發本 skill。
+description: 分析專案程式碼，找出「改 A 會壞 B」的連動禁區——高扇入模組、資料結構契約、部署設定、對外契約、演算法核心——經確認後寫入該專案的 CLAUDE.md。當使用者要建立 guardrails、問哪些程式碼不能亂動、哪些模組牽一髮動全身時觸發。也是 agentic-dev-loop Step 0 的前置階段。
 ---
 
 # Project Guardrails(連動禁區建置)

@@ -1,6 +1,6 @@
 ---
 name: prompt-coach
-description: Turns a vague, underspecified request into a clearly structured Goal / Constraints / Obstacle breakdown, then produces a ready-to-use structured prompt. Use this whenever the user brings a fuzzy ask ("幫我想辦法...", "有什麼方法可以...", "我不知道怎麼處理..."), asks explicitly to help them "問對問題" or structure their request, or describes a real-world problem/decision they want AI help with but haven't yet specified what success looks like, what can't change, or what the actual blocker is. Trigger this proactively — even without the user naming the skill — any time answering directly would likely produce a generic, "technically correct but not actually usable" answer rather than something tailored to their real situation.
+description: Turns a vague ask into a Goal / Constraints / Obstacle breakdown, then a ready-to-use structured prompt. Use when the user brings a fuzzy request (「幫我想辦法…」「有什麼方法可以…」「我不知道怎麼處理…」), asks to 「問對問題」, or names a real problem without saying what success looks like, what can't change, or what the blocker is.
 ---
 
 # 問對問題教練 (Prompt Coach)
