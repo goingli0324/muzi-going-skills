@@ -1,3 +1,26 @@
 .DS_Store
 *.bak
 *.bak.*
+
+# ── 機密防呆補網（2026-07-26 全專案 .gitignore 盤點）──
+# 金鑰／憑證／套件資料夾一律封鎖，避免誤下載到專案夾後被 git add . 帶進版控。
+# 只補本專案原本漏掉的規則，既有行未更動。範本檔 .env.example 明確放行（全域 CLAUDE.md §七）。
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*serviceAccount*.json
+*-adminsdk-*.json
+*firebase-adminsdk*
+.runtimeconfig.json
+credentials*.json
+.clasprc.json
+!.env.example
+
+# 套件／虛擬環境資料夾
+node_modules/
+.venv/
+venv/
+__pycache__/
