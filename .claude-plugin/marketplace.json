@@ -106,6 +106,15 @@
       "category": "security",
       "source": "./plugins/web-security-reviewer",
       "homepage": "https://github.com/goingli0324/web-security-reviewer"
+    },
+    {
+      "name": "festival-card",
+      "description": "節慶祝賀卡片產生器 — your own character plus a chibi animal in a 3D soft-vinyl festive scene, with Traditional Chinese and English greetings; 4 candidates, then square and landscape. 37 Taiwanese festivals and solar terms built in.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "creative",
+      "source": "./plugins/festival-card"
     }
   ]
 }

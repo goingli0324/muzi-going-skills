@@ -1,0 +1,31 @@
+{
+  "_說明": "複製成工作資料夾裡的 character.json 再填。主角與動物的參考圖要先生好（見 docs/主角定版.md、docs/動物錨點提示詞範本.md），路徑都相對於工作資料夾。",
+
+  "protagonist": {
+    "figure": "figures/main.png",
+    "default_costume": null,
+    "noun": "girl",
+    "possessive": "her",
+    "object": "her",
+    "head_top": "the girl's head",
+    "identity": "same round glasses, same short brown bob hair, same facial features and proportions, same clothing, same shoes"
+  },
+
+  "animals": {
+    "leopardcat": {"anchor": "anchors/leopardcat.png", "desc": "Taiwanese leopard cat toy (tawny fur, dark forehead stripes, spotted cheeks and legs)"},
+    "bluemagpie": {"anchor": "anchors/bluemagpie.png", "desc": "Taiwan blue magpie toy (black head, red beak and legs, cobalt blue body, long white-tipped tail)"},
+    "blackbear": {"anchor": "anchors/blackbear.png", "desc": "Formosan black bear toy (glossy black fur, cream V-shaped chest mark, tan muzzle)"},
+    "sikadeer": {"anchor": "anchors/sikadeer.png", "desc": "Formosan sika deer toy (chestnut-brown coat with rows of white spots, white rump, small antler nubs)"}
+  },
+
+  "signature": {
+    "image": null,
+    "wordmark": "YOUR NAME"
+  },
+
+  "fonts": {
+    "zh": "LXGWWenKaiTC-Bold.ttf",
+    "en": "Fraunces_72pt_Soft-SemiBoldItalic.ttf",
+    "sign": "Fraunces_72pt_Soft-Regular.ttf"
+  }
+}

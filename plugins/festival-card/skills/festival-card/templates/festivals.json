@@ -1,0 +1,226 @@
+{
+  "_說明": "37 個節慶（15 個台灣節日＋22 個節氣）的意涵、場景元素（英文，直接進生圖提示詞）、配色與月相。moon 是當天月相：含月亮的節慶生圖時一律照此寫（AI 常把滿月畫成彎月）；節氣是國曆日期、每年對到的農曆日不同，一律 none，要畫月亮時當年查。可以自行增修；新增節慶要在 scripts/festival_dates.py 補日期規則，否則排程算不到它。可選欄位：costume（主角換造型用，對應 character.json 的 figure 樣式）、tone（整體語氣，例如莊重的節日）。",
+  "春節": {
+    "moon": "none",
+    "meaning": "辭舊迎新、闔家團圓、新年好運",
+    "motifs": "red lanterns, spring couplet shapes without writing, tangerines, firecracker-shaped paper decorations, plum blossoms",
+    "palette": "festive red, warm gold, cream"
+  },
+  "除夕": {
+    "moon": "none",
+    "meaning": "圍爐團圓、守歲、感謝這一年",
+    "motifs": "round family dinner table with hot pot, warm indoor lamps, red envelopes without writing",
+    "palette": "warm red, amber, soft cream"
+  },
+  "元宵": {
+    "moon": "full moon",
+    "meaning": "賞燈、猜燈謎、吃湯圓、團圓",
+    "motifs": "glowing paper lanterns without writing, sweet rice dumplings (tangyuan) in a bowl, full moon",
+    "palette": "orange glow, night indigo, warm gold"
+  },
+  "清明": {
+    "moon": "none",
+    "meaning": "慎終追遠、踏青、春日思念",
+    "motifs": "fresh green hills, willow branches, spring rain, kites, wild flowers",
+    "palette": "fresh green, misty white, soft sky blue"
+  },
+  "端午": {
+    "moon": "none",
+    "meaning": "划龍舟、吃粽子、避邪保平安",
+    "motifs": "cute dragon boat on a river, zongzi rice dumplings, mugwort bundles, fragrant sachets",
+    "palette": "river blue, leaf green, warm yellow"
+  },
+  "七夕": {
+    "moon": "first quarter half moon",
+    "meaning": "牛郎織女相會、珍惜身邊的人",
+    "motifs": "starry night sky, milky way, a bridge of magpies, soft glowing stars",
+    "palette": "night violet, starlight silver, soft pink"
+  },
+  "中元": {
+    "moon": "full moon",
+    "meaning": "普渡祈福、敬天地、心存善念",
+    "motifs": "floating river lanterns, incense smoke curls, offering fruits, calm water",
+    "palette": "deep indigo, soft candle gold, muted teal",
+    "tone": "solemn and gentle, NOT playful, no party mood"
+  },
+  "中秋": {
+    "moon": "full moon",
+    "meaning": "月圓人團圓、賞月、烤肉、吃月餅與柚子",
+    "motifs": "big full moon, mooncakes, pomelos, a small barbecue grill, osmanthus flowers",
+    "palette": "moon gold, night blue, warm amber"
+  },
+  "重陽": {
+    "moon": "none",
+    "meaning": "登高、敬老、祝長輩健康長壽",
+    "motifs": "autumn mountain path, chrysanthemums, dogwood sprigs, walking together uphill",
+    "palette": "chrysanthemum yellow, autumn orange, olive"
+  },
+  "教師節": {
+    "moon": "none",
+    "meaning": "孔子誕辰、尊師重道、感謝老師的教導",
+    "motifs": "classroom or courtyard, books, a potted plant sprouting, pencil, apple, gratitude card without writing",
+    "palette": "warm cream, sage green, soft wood brown"
+  },
+  "母親節": {
+    "moon": "none",
+    "meaning": "感謝媽媽的愛與照顧",
+    "motifs": "carnations, gift box, heart shapes, cozy home",
+    "palette": "carnation pink, lavender, cream"
+  },
+  "父親節": {
+    "moon": "none",
+    "meaning": "感謝爸爸默默的守護",
+    "motifs": "warm porch light, a cup of tea, necktie-shaped gift, evening home",
+    "palette": "calm blue, warm amber, cream"
+  },
+  "冬至": {
+    "moon": "none",
+    "meaning": "吃湯圓、添一歲、冬日暖心",
+    "motifs": "steaming bowl of tangyuan, warm scarf, cozy window with cold blue outside",
+    "palette": "warm cream, soft red, cool winter blue"
+  },
+  "聖誕": {
+    "moon": "none",
+    "meaning": "平安、分享、溫暖的節日祝福",
+    "motifs": "decorated Christmas tree, gift boxes, fairy lights, gentle snowflakes",
+    "palette": "pine green, warm red, twinkle gold"
+  },
+  "國慶": {
+    "moon": "none",
+    "meaning": "雙十節，慶祝國家生日、祝福家園平安繁榮",
+    "motifs": "night fireworks bursting in the sky, red white and blue paper bunting as plain triangles, paper pinwheels, a small marching drum, city skyline lights. NO national flags of any kind (models draw them wrong)",
+    "palette": "festive red, deep blue, white, firework gold"
+  },
+  "立春": {
+    "moon": "none",
+    "meaning": "立春迎新，萬物初醒、一年之始",
+    "motifs": "first green sprouts, a few lingering early cherry blossoms, a farmer's little plough, a brand-new paper calendar without writing",
+    "palette": "fresh tender green to soft goose-yellow, light and airy"
+  },
+  "雨水": {
+    "moon": "none",
+    "meaning": "雨水潤物，春雨滋養新綠",
+    "motifs": "gentle spring drizzle, rain dripping from a tiled eave, fresh new leaves, clear umbrellas, a wet quiet alley after rain",
+    "palette": "fresh tender green to soft goose-yellow, light and airy"
+  },
+  "驚蟄": {
+    "moon": "none",
+    "meaning": "驚蟄春雷，蟲醒芽發",
+    "motifs": "soft rolling spring thunder clouds, sprouts breaking through soil, tiny cute bugs waking up, young bamboo shoots, birds taking flight",
+    "palette": "fresh tender green to soft goose-yellow, light and airy"
+  },
+  "春分": {
+    "moon": "none",
+    "meaning": "春分和暖，晝夜平分、春光正好",
+    "motifs": "swallows, peach blossoms and azaleas, neat field ridges, a spring bicycle outing in the countryside",
+    "palette": "fresh tender green to soft goose-yellow, light and airy"
+  },
+  "穀雨": {
+    "moon": "none",
+    "meaning": "穀雨初晴，雨生百穀、新茶採收",
+    "motifs": "peonies, sunshine after rain, rice seedling paddies, terraced tea gardens with fresh tea leaves, a cup of new tea",
+    "palette": "fresh tender green to soft goose-yellow, light and airy"
+  },
+  "立夏": {
+    "moon": "none",
+    "meaning": "立夏初長，夏天開始",
+    "motifs": "pomegranate flowers, a little frog, bamboo shadows, the first ice popsicle of summer, an electric fan",
+    "palette": "warm orange-yellow to peach pink, bright summer light"
+  },
+  "小滿": {
+    "moon": "none",
+    "meaning": "小滿盈盈，穀粒漸滿、梅雨時節",
+    "motifs": "grain ears starting to fill, a pond nearly full, plum-rain season drizzle, a snail on a leaf, first lotus blooms",
+    "palette": "warm orange-yellow to peach pink, bright summer light"
+  },
+  "芒種": {
+    "moon": "none",
+    "meaning": "芒種忙耕，播種收成、畢業季節",
+    "motifs": "rice transplanting in a mirror-like water paddy, a bamboo hat, red flame tree (royal poinciana) blossoms of graduation season",
+    "palette": "warm orange-yellow to peach pink, bright summer light"
+  },
+  "夏至": {
+    "moon": "none",
+    "meaning": "夏至日長，一年白晝最長",
+    "motifs": "blazing summer sun, big lotus leaves, cicadas on a tree, a seaside beach, watermelon slices, a beach parasol",
+    "palette": "warm orange-yellow to peach pink, bright summer light"
+  },
+  "小暑": {
+    "moon": "none",
+    "meaning": "小暑納涼，天氣漸熱",
+    "motifs": "a bamboo mat, a palm-leaf fan, a cool well, a big bowl of Taiwanese shaved ice, a glass wind chime",
+    "palette": "warm orange-yellow to peach pink, bright summer light"
+  },
+  "大暑": {
+    "moon": "none",
+    "meaning": "大暑消夏，一年最熱",
+    "motifs": "deep cool tree shade, fresh mangoes and melons, a clear stream to splash in",
+    "palette": "warm orange-yellow to peach pink, bright summer light"
+  },
+  "立秋": {
+    "moon": "none",
+    "meaning": "立秋涼至，秋天開始",
+    "motifs": "a single falling wutong leaf, the first cool breeze, the first pomelos of the season",
+    "palette": "golden yellow to warm ochre brown, mellow autumn light"
+  },
+  "處暑": {
+    "moon": "none",
+    "meaning": "處暑暑退，暑氣漸消",
+    "motifs": "a glowing evening sunset sky, birds flying home, a grain-drying yard, an evening stroll",
+    "palette": "golden yellow to warm ochre brown, mellow autumn light"
+  },
+  "白露": {
+    "moon": "none",
+    "meaning": "白露凝珠，晨露漸重",
+    "motifs": "dew drops on grass blades, reeds and silver grass, soft morning mist",
+    "palette": "golden yellow to warm ochre brown, mellow autumn light"
+  },
+  "秋分": {
+    "moon": "none",
+    "meaning": "秋分豐盈，晝夜平分、稻熟花香",
+    "motifs": "golden rice fields with heavy drooping ears like Chishang, osmanthus flowers",
+    "palette": "golden yellow to warm ochre brown, mellow autumn light"
+  },
+  "寒露": {
+    "moon": "none",
+    "meaning": "寒露初寒，露水轉涼",
+    "motifs": "chrysanthemums, a flying V of wild geese, hillsides of silver grass, a cup of hot tea, a light jacket",
+    "palette": "golden yellow to warm ochre brown, mellow autumn light"
+  },
+  "霜降": {
+    "moon": "none",
+    "meaning": "霜降楓紅，秋末天寒",
+    "motifs": "red maple leaves, persimmons drying on racks like Hsinpu dried-persimmon yards, a light frost on roof tiles",
+    "palette": "golden yellow to warm ochre brown, mellow autumn light"
+  },
+  "立冬": {
+    "moon": "none",
+    "meaning": "立冬進補，冬天開始",
+    "motifs": "a warm stove, a bubbling clay pot of ginger duck stew, steam on the window",
+    "palette": "cool teal-green to frosty white, with cozy warm accents"
+  },
+  "小雪": {
+    "moon": "none",
+    "meaning": "小雪初寒，第一波寒流",
+    "motifs": "the first cold front of the season, a cozy knitted scarf, steaming hot drinks, bare branches, early winter plum blossoms. No snow on flat ground",
+    "palette": "cool teal-green to frosty white, with cozy warm accents"
+  },
+  "大雪": {
+    "moon": "none",
+    "meaning": "大雪封山，高山飄雪",
+    "motifs": "snow only on high mountain peaks like Hehuanshan, a small hand warmer, cozy winter coats",
+    "palette": "cool teal-green to frosty white, with cozy warm accents"
+  },
+  "小寒": {
+    "moon": "none",
+    "meaning": "小寒臘梅，寒意漸深",
+    "motifs": "wintersweet and plum blossom season, a thin sheet of ice, a steaming hot spring",
+    "palette": "cool teal-green to frosty white, with cozy warm accents"
+  },
+  "大寒": {
+    "moon": "none",
+    "meaning": "大寒歲末，掃塵備年",
+    "motifs": "year-end house cleaning with a feather duster, red paper decorations without writing, shopping bags of New Year goods like Dihua Street, a year-end party",
+    "palette": "cool teal-green to frosty white, with cozy warm accents"
+  }
+}

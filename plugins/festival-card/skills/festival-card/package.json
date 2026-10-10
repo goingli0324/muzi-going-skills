@@ -1,0 +1,9 @@
+{
+  "name": "festival-card-skill",
+  "private": true,
+  "type": "module",
+  "description": "節慶祝賀卡片產線的生圖相依套件（scripts/gen.mjs）",
+  "dependencies": {
+    "@google/genai": "^1.52.0"
+  }
+}

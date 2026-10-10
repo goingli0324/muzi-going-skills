@@ -26,6 +26,7 @@ Muzi Going 的 Claude skills 商店(Claude Code plugin marketplace)。
 | [project-guardrails](plugins/project-guardrails) | development | 連動禁區防護——分析程式碼找出「改 A 壞 B」高風險區,寫入專案 CLAUDE.md |
 | [ui-ux-deploy-reviewer](plugins/ui-ux-deploy-reviewer) | design | 部署前 UI/UX 總體檢——20 項原則逐項審視,輸出問題清單與放行檢核表 |
 | [web-security-reviewer](plugins/web-security-reviewer) | security | 防禦性安全審查——檢測資安漏洞、資料外洩、壓力/效能風險,輸出依嚴重度排序的報告與修正後程式碼(GAS/前端/後端) |
+| [festival-card](plugins/festival-card) | creative | 節慶祝賀卡片產生器——你的主角配一隻 Q 版動物、3D 軟膠公仔質感，4 張候選挑一張再延伸成方形與橫式；內建 37 個台灣節日與節氣。**需要 Claude Code（桌面 app 或終端機）、自己的 Gemini API 金鑰、Node 與 uv**，不支援 claude.ai 網頁版 |
 
 ## 單獨安裝(不透過 marketplace)
 
@@ -42,7 +43,7 @@ Muzi Going 的 Claude skills 商店(Claude Code plugin marketplace)。
 - https://github.com/goingli0324/ui-ux-deploy-reviewer
 - https://github.com/goingli0324/web-security-reviewer
 
-Claude App / claude.ai 使用者:把 skill 資料夾壓成 `.skill`(ZIP)檔,到 **Settings → Skills** 上傳。
+Claude App / claude.ai 使用者:把 skill 資料夾壓成 `.skill`(ZIP)檔,到 **Settings → Skills** 上傳。(festival-card 例外:它要在本機跑程式與連 Gemini,只能用 Claude Code。)
 
 ## License
 
