@@ -15,6 +15,10 @@ description: 節慶祝賀卡片產生器——你的主角配一隻 Q 版動物�
 export FESTIVAL_CARD_HOME="$HOME/festival-cards"; cd "$FESTIVAL_CARD_HOME"
 ```
 
+## 只想在 ChatGPT／Gemini 做一張？
+
+使用者不想裝環境、沒有 API 金鑰，或只是想用自己的照片和寵物做一張時，給他 `SKILL_DIR/docs/聊天版提示詞範本.md` 的兩段提示詞（先照片轉盲盒公仔、再用公仔做賀卡），不用跑下面的設定。
+
 ## 第一次使用：設定（`WORK/character.json` 不存在時先做這段）
 
 一項一項做、做完一項確認一項，不要一次全丟給使用者。
