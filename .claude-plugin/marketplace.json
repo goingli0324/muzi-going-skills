@@ -115,6 +115,16 @@
       },
       "category": "creative",
       "source": "./plugins/festival-card"
+    },
+    {
+      "name": "course-backup",
+      "description": "線上課程備份 — back up a paid online course before access expires (videos, handouts, captions, transcripts) with locally generated, agent-proofread transcripts. Requires Claude Code, the Claude in Chrome extension, and macOS.",
+      "author": {
+        "name": "Muzi Going Li"
+      },
+      "category": "learning",
+      "source": "./plugins/course-backup",
+      "homepage": "https://github.com/goingli0324/course-backup"
     }
   ]
 }

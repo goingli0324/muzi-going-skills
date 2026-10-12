@@ -1,0 +1,9 @@
+{
+  "name": "course-backup",
+  "description": "線上課程備份 — back up a paid online course before access expires: videos, handouts, captions and transcripts, with local Whisper transcripts proofread by agents. No credentials, no DRM circumvention, no redistribution.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Muzi Going Li",
+    "email": "goingli0324@gmail.com"
+  }
+}
