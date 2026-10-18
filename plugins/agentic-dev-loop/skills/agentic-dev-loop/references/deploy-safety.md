@@ -9,8 +9,8 @@
 ## 放行前提（在帳號核對之前，這些要先成立）
 
 - [ ] Verify 雙閘該走的都走了，無未解 P0 / Critical / High
-- [ ] **smoke 閘**:有 `test:smoke` 的專案已跑過（可用 `/predeploy` 自動偵測串接）；Build 出口那份 smoke 清單已**人工逐項驗過**——照全域 CLAUDE.md §三，未經人工驗證視同未過
-- [ ] 修正過程未為了過測試而硬改 `src/`（全域 §四 鐵則）
+- [ ] **smoke 閘**:有 `test:smoke` 的專案已跑過（可用 `/predeploy` 自動偵測串接）；Build 出口那份 smoke 清單已**人工逐項驗過**——照全域 CLAUDE.md〈三、動手後：兩份清單〉，未經人工驗證視同未通過
+- [ ] 修正過程未為了過測試而硬改 `src/`（鐵則見smoke 測試架構文件（建議放在 `~/.claude/docs/smoke-test-architecture.md`，由全域〈十一、需要時才讀〉指向））
 
 ## 核心防呆原則
 
