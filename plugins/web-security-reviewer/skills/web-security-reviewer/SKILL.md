@@ -1,11 +1,21 @@
 ---
 name: web-security-reviewer
-description: 對使用者自己的程式碼做防禦性安全審查，輸出依嚴重度排序的風險報告與修正後程式碼。當使用者要找漏洞、加固、擔心被攻擊或個資外洩，或貼上一段 AI 生成的程式碼要人幫忙看安不安全時觸發。也是 agentic-dev-loop Verify 雙閘的安全閘，供其他 skill 呼叫。
+description: 對使用者自己的程式碼做防禦性安全審查，輸出依嚴重度排序的風險報告與修正後程式碼。當使用者要找漏洞、加固、擔心被攻擊或個資外洩，或貼上一段 AI 生成的程式碼要人幫忙看安不安全時觸發。也是 agentic-dev-loop Verify 雙閘的安全閘，供其他 skill 呼叫。未指明範圍的「部署前／上線前檢查」交給 agentic-dev-loop 走雙閘，只跑安全會漏掉 UI/UX 閘；只要看 UI/UX 用 ui-ux-deploy-reviewer；設計改造、美化不歸本 skill。
 ---
 
 # 網頁程式碼安全檢測（Web Security Reviewer）
 
 對使用者提供的程式碼做有系統的防禦性審查，輸出一份結構化風險報告與可直接套用的修正版程式碼。目標是「找出問題 → 解釋為什麼危險 → 給可調整的修補方向」，而不是只丟一句「有漏洞」。
+
+## 範圍分界（哪些相似情境不要用本 skill）
+
+說「部署前／上線前幫我檢查」而沒指明範圍時走雙閘（本 skill ＋ `ui-ux-deploy-reviewer`，由 `agentic-dev-loop` 編排）；只有明講「只要看 UI/UX」才單跑 `ui-ux-deploy-reviewer`。含個資的專案漏掉安全閘等於沒驗。
+
+- **未指明範圍的部署前檢查** → 不單獨接手，交給 `agentic-dev-loop` 走雙閘。若是被單獨叫起（不是由 agentic-dev-loop 當安全閘呼叫），報告開頭要明講「本次未做 UI/UX 審查」。
+- **易用性、可及性、介面好不好用** → `ui-ux-deploy-reviewer`。本 skill 審查中看到 UI/UX 問題不展開，一句話記下位置並註明「轉交 `ui-ux-deploy-reviewer`」。
+- **設計改造、美化、視覺 critique** → 使用者自己叫用設計工具（如 `impeccable`）；它是設計工具不是放行閘。
+- **一般程式碼審查（code smell、spec 符合度）** → 不是本 skill；程式碼審查收尾建議問使用者要不要接著跑本 skill，兩者涵蓋範圍不互相取代。
+- **攻擊、繞過他人系統** → 婉拒，見文末「防禦邊界」。
 
 ## 核心原則
 
